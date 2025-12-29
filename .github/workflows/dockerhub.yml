@@ -21,8 +21,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: |
-#        run: docker build -t strategicventuresteam/testrepo14:latest .
+        run: docker build -t strategicventuresteam/testrepo14:latest .
 
       - name: Push Docker image
         run: docker push strategicventuresteam/testrepo14:latest
